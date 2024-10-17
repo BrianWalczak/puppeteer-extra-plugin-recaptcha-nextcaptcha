@@ -1,0 +1,61 @@
+{
+	"name": "puppeteer-extra-plugin-recaptcha-nextcaptcha",
+	"version": "1.0.0",
+	"description": "An add-on plugin for puppeteer-extra-plugin-recaptcha that adds support for NextCaptcha",
+	"types": "dist/index.d.ts",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.ts",
+	"scripts": {
+		"build": "npm run build:tsc && npm run build:rollup",
+		"build:tsc": "tsc --module commonjs",
+		"build:rollup": "rollup -c rollup.config.ts"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"puppeteer",
+		"puppeteer-extra",
+		"puppeteer-extra-plugin",
+		"puppeteer-extra-plugin-recaptcha",
+		"puppeteer-extra-plugin-recaptcha-nextcaptcha",
+		"recaptcha",
+		"hcaptcha",
+		"captcha",
+		"2captcha",
+		"capsolver",
+		"capmonster",
+		"anticaptcha",
+		"deathbycaptcha",
+		"nextcaptcha"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BrianWalczak/puppeteer-extra-plugin-recaptcha-nextcaptcha.git"
+	},
+	"author": "BrianWalczak",
+	"license": "MIT",
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^22.0.0",
+		"@rollup/plugin-node-resolve": "^13.3.0",
+		"@rollup/plugin-typescript": "^8.3.3",
+		"@types/debug": "^4.1.7",
+		"@types/node": "^16.11.11",
+		"@types/puppeteer": "^5.4.6",
+		"dotenv": "^16.0.1",
+		"jest": "^28.1.1",
+		"jest-puppeteer": "^6.1.0",
+		"puppeteer-extra-plugin-recaptcha": "^3.5.0",
+		"rollup": "^2.75.6",
+		"ts-node": "^10.8.1",
+		"tslib": "^2.4.0",
+		"typescript": "^4.7.3"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"debug": "^4.3.4"
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	}
+}
